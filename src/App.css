@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  background-color: rgb(164, 0, 0);
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+  text-align: center;
+  text-wrap: balance;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0.85rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.card-desc {
+  flex-grow: 1;
+  padding: 0 1rem 1rem;
+  font-size: 0.975rem;
+  line-height: 1.5;
+}
+
+.light {
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+  padding: 5px 0px;
+}
+
+@media (max-width: 340px) {
+  #date{
+    font-size: 1rem;
+  }
+  
+  .App h1{
+    font-size: 1.3rem;
+  }
+}
